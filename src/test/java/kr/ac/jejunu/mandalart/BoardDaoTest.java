@@ -1,6 +1,7 @@
 package kr.ac.jejunu.mandalart;
 
 import kr.ac.jejunu.mandalart.dao.BoardDao;
+import kr.ac.jejunu.mandalart.entity.Board;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -34,4 +35,5 @@ public class BoardDaoTest {
         Board registeredBoard = boardDao.findById(board.getId());
         assertThat(registeredBoard.getPurpose(), is(board.getPurpose()));
     }
+
 }
