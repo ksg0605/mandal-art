@@ -1,13 +1,9 @@
 package kr.ac.jejunu.mandalart.dao;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
+import kr.ac.jejunu.mandalart.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-@Component
-@RequiredArgsConstructor
-public class UserDao {
-
-    public User findById(Integer id) {
-        return null;
-    }
+@Repository
+public interface UserDao extends JpaRepository<User, Integer> {
 }

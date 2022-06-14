@@ -1,23 +1,10 @@
 package kr.ac.jejunu.mandalart.dao;
 
-import kr.ac.jejunu.mandalart.entity.Board;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
+import kr.ac.jejunu.mandalart.model.Board;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-@Component
-@RequiredArgsConstructor
-public class BoardDao {
-    public void registration(Board board) {
-    }
+@Repository
+public interface BoardDao extends JpaRepository<Board, Integer> {
 
-    public Board findById(Integer id) {
-        return null;
-    }
-
-    public void update(Board board) {
-
-    }
-
-    public void delete(Integer id) {
-    }
 }
