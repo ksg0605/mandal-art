@@ -1,6 +1,6 @@
 package kr.ac.jejunu.mandalart.dao;
 
-import kr.ac.jejunu.mandalart.Board;
+import kr.ac.jejunu.mandalart.entity.Board;
 
 public class BoardDao {
     public void registration(Board board) {
