@@ -25,4 +25,5 @@ public class BoardController {
     public void delete(@PathVariable Integer id) {
         boardDao.delete(boardDao.findById(id).orElse(null));
     }
+
 }
