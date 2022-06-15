@@ -13,6 +13,7 @@ public class Post {
     private Integer postId;
     @Column(name = "post_number")
     private Integer postNumber;
+    @Column(name = "purpose")
     private String purpose;
 
 }
