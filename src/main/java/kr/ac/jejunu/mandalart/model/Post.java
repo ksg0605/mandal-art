@@ -7,10 +7,10 @@ import javax.persistence.*;
 @Data
 @Entity(name = "posts")
 public class Post {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "post_id")
     private Integer postId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "post_number")
     private Integer postNumber;
     @Column(name = "purpose")

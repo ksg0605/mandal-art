@@ -12,7 +12,8 @@ import javax.persistence.Id;
 public class Board {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String purpose;
+
 }
